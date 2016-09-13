@@ -1,3 +1,23 @@
 Important Points:-
 
 1. Be careful while specifying SLURM parameters both in the BATCH Script via #SBATCH and on the line of srun in the Script. 
+
+2. Is there any defaults, priority, allocation and override rules?   
+
+   Override Rule:- Environment variables will override any options set in a batch script, 
+   and command line options will override any environment variables. 
+
+3. Useful env variables in slurm.
+
+   Output Environment Variables:-
+     $SLURM_CPUS_PER_TASK
+     $SLURM_NTASKS_PER_NODE
+     $SLURM_NTASKS
+     $SLURM_TASK_PID
+     $SLURM_TASKS_PER_NODE
+     $SLURM_JOB_NODELIST
+     $SLURM_JOB_NUM_NODES
+     $SLURM_JOB_PARTITION
+     $SLURMD_NODENAME
+    
+    
